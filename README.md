@@ -1,12 +1,32 @@
 # ANN from Scratch
 
-This project implements an Artificial Neural Network (ANN) from scratch in Python without using any machine learning libraries such as TensorFlow or PyTorch. The goal is to provide an educational example of how ANNs work under the hood, focusing on the mathematical concepts and programming techniques involved.
+This repository provides a deep dive into the fundamentals of neural networks and machine learning, featuring two key resources:
+
+1. **An Artificial Neural Network (ANN) implementation from scratch**, inspired by the teachings of Guillaume from the [MachineLearnia](https://www.youtube.com/@MachineLearnia) YouTube channel.
+2. **A comprehensive slide deck (around 250 slides)** crafted to explain the basics of machine learning, deep learning, and the gradient descent algorithm, designed independently for a deep learning course delivered to the Open Source Club.
+
+---
 
 ## Features
 
-- **Fully Custom Implementation:** The project demonstrates how to build an ANN step-by-step, including forward propagation, backpropagation, and weight updates.
-- **Mathematical Foundations:** Key mathematical concepts like gradients, loss functions, and activation functions are explained and implemented.
-- **Educational Approach:** Designed to help students and enthusiasts understand the inner workings of neural networks.
+### ANN Implementation
+
+- **Custom Build:** Implements an ANN entirely in Python without libraries like TensorFlow or PyTorch.
+- **Key Components:**
+  - Forward propagation for calculating outputs.
+  - Backpropagation for learning via gradient descent.
+  - Activation functions such as sigmoid and ReLU.
+  - Loss function computation, including Mean Squared Error.
+- **Learning-Oriented Design:** Step-by-step code and explanations to help beginners grasp neural network mechanics.
+
+### Slide Deck
+
+- **Educational Focus:** Introduces machine learning and deep learning concepts in an easy-to-follow format.
+- **Gradient Descent Explained:** Thorough coverage of the gradient descent algorithm, its mathematical foundation, and its role in optimization.
+- **Standalone Resource:** The slides stop at gradient descent and do not delve into forward or backward propagation.
+- **Independent Creation:** These slides were developed solely by the author to support the Open Source Club’s educational goals.
+
+---
 
 ## Getting Started
 
@@ -16,11 +36,16 @@ This project implements an Artificial Neural Network (ANN) from scratch in Pytho
 - Required libraries:
   - `numpy`
   - `matplotlib` (optional, for visualization)
+  - `sklearn`
+  - `tqdm`
 
 Install the necessary libraries using pip:
 
 ```bash
 pip install numpy matplotlib
+pip install numpy sklearn
+pip install numpy tqdm
+pip install numpy numpy
 ```
 
 ### Running the Notebook
@@ -29,21 +54,26 @@ pip install numpy matplotlib
 2. Open the Jupyter Notebook (`ANN_from_scratch.ipynb`) in a Jupyter environment.
 3. Run the cells sequentially to understand and execute the code.
 
-## Project Structure
+---
 
-- **Forward Propagation:** Calculates the output of the network given input data.
-- **Backpropagation:** Adjusts weights based on the error gradient to minimize the loss function.
-- **Activation Functions:** Implements common activation functions like sigmoid and ReLU.
-- **Loss Calculation:** Uses a loss function (e.g., Mean Squared Error) to evaluate model performance.
+## Important Notice
 
-## Acknowledgments
-
-This project was created with the guidance of Guillaume from the [MachineLearnia](https://www.youtube.com/@MachineLearnia) YouTube channel. His tutorials provided valuable insights and inspiration for building this educational implementation.
-
-## License
-
-This project is open-source and available under the MIT License. Feel free to use, modify, and distribute it as you see fit.
+- The **ANN implementation** is inspired by the work of Guillaume from MachineLearnia.
+- The **slides** are the original work of the repository author. Their use, reproduction, or distribution without explicit permission is strictly prohibited.
 
 ---
 
-For any questions or suggestions, please feel free to reach out!
+## Acknowledgments
+
+- Special thanks to Guillaume from [MachineLearnia](https://www.youtube.com/@MachineLearnia) for the inspiration and guidance on the ANN implementation.
+- Gratitude to the Open Source Club for the opportunity to present the educational course where these slides were used.
+
+---
+
+## License
+
+This project is open-source under the MIT License, except for the slide deck, which requires explicit permission for use.
+
+---
+
+For any questions or suggestions, feel free to reach out!
